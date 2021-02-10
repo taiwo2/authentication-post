@@ -2,17 +2,20 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
   def index
-    @posts = Post.all.order(created_at: :desc)
+    @posts = Post.all
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
   def create
-    @post = Post.new(params_post)
+    @post = current_user.posts.build(params_post)
+
+    @post.user = current_user
+
     if @post.save
-      redirect root_path
+      redirect_to root_path
     else
       render :new
     end
@@ -20,7 +23,7 @@ class PostsController < ApplicationController
 
   private
 
-  def post_params
+  def params_post
     params.require(:post).permit(:text)
   end
 end

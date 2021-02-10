@@ -1,0 +1,35 @@
+<% unless current_user %>
+  <div class="index-header-not-logged-in">
+    <%= button_to "sign up", new_user_registration_path, method: :get, class: "button" %>
+    <%= button_to "login", new_user_session_path, method: :get, class: "button" %>
+  </div>
+<% end %>
+<% if current_user %>
+  <div class="index-header-logged-in">
+    <div class="username">
+      <%= current_user.username %>
+    </div>
+    <div class="index-header-logged-in">
+      <%= button_to "make a new post", new_post_path, method: :get, class: "button" %>
+      <%= button_to "logout", destroy_user_session_path, method: :delete, class: "button" %>
+    </div>
+  </div>
+<% end %>
+<h1>All of the posts</h1>
+<div class="post-boxes-container">
+  <% @posts.each do |post| %>
+    <div class="post-box">
+      <div class="username-in-post-box">
+        <% if current_user %>
+          <%= post.user.username %>
+        <% end %>
+      </div><br>
+      <div class="body-in-post-box">
+        "<%= post.text %>"
+      </div><br>
+      <div class="timestamp-in-post-box">
+        <%= time_ago_in_words(post.created_at) %>
+      </div>
+    </div>
+  <% end %>
+</div>
