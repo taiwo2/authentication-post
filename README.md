@@ -1,24 +1,44 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🔧 Built with<a name = "built_using"></a>
 
-Things you may want to cover:
+- Ruby
+- Ruby on Rails
+- HTML
 
-* Ruby version
+## Getting started
 
-* System dependencies
+- Clone the repo `https://github.com/taiwo2/rails-form.git`
+- `cd` into the directory
+- Run `git checkout -b rails-form`
+- Run `git pull origin rails-form`
+- Run `bundle install`
+- Setup your db, and run `rails db:create db:migrate`
 
-* Configuration
+## Features
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Author
 
-* Deployment instructions
+👤 Taiwo Adetona
 
-* ...
+- Github: [@taiwo2](https://github.com/taiwo2)
+
+- LinkedIn: [Taiwo Adetona](https://www.linkedin.com/in/taiwo-adetona/)
+
+- Twitter: [@TaiwoAdetona4](https://twitter.com/TaiwoAdetona4/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the issues page.
+
+Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is a collaboration project. All rights are reserved for Taiwo.
