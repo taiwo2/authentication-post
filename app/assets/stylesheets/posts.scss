@@ -30,12 +30,12 @@
   border-radius: 100px;
   color: white;
   padding: 15px 32px;
-  text-align:center;
+  text-align: center;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
 }
-  
+
 input[type=submit] {
   background-color: #362f55;
   border-radius: 100px;
@@ -46,14 +46,14 @@ input[type=submit] {
   font-size: 16px;
   cursor: pointer;
 }
-  
+
 .username {
   padding-top: 10px;
   padding-left: 50px;
   font-size: 46px;
   font-weight: bold;
 }
-  
+
 h1 {
   font-size: 88px;
   margin-top: 10px;
@@ -67,7 +67,7 @@ body {
   text-align: center;
   font-family: Helvetica, sans-serif;
 }
-  
+
 .post-boxes-container {
   display: flex;
   flex-direction: column-reverse;
@@ -110,9 +110,10 @@ body {
   width: 33%;
   height: 200px;
   font-size: 30px;
-  margin: 25px 0px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-  
+
 .label {
   font-size: 30px;
 }
