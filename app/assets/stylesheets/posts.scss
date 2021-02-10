@@ -2,22 +2,25 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  margin: 0px 120px 0px 120px;
+  margin-right: 120px;
+  margin-left: 120px;
   }
   
 .index-header-logged-in {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  margin: 0px 75px 0px 75px;
+  margin-right: 75px;
+  margin-left: 75px;
 }
 
 .just-back-button-header {
   padding: 10px;
-  margin: 0px 75px 0px 75px;
+  margin-right: 75px;
+  margin-left: 75px;
   display: flex;
 }
-  
+
 .header-buttons {
   display: flex;
 }
@@ -45,14 +48,16 @@ input[type=submit] {
 }
   
 .username {
-  padding: 10px 0px 0px 50px;
+  padding-top: 10px;
+  padding-left: 50px;
   font-size: 46px;
   font-weight: bold;
 }
   
 h1 {
   font-size: 88px;
-  margin: 10px 0px 50px;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 body {
@@ -120,5 +125,6 @@ body {
   width: 20%;
   height: 30px;
   font-size: 30px;
-  margin: 25px 0px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
