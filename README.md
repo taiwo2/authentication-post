@@ -7,7 +7,7 @@
 
 ## Getting started
 
-- Clone the repo `https://github.com/taiwo2/rails-form.git`
+- Clone the repo `https://github.com/taiwo2/authenntication-post.git`
 - `cd` into the directory
 - Run `git checkout -b rails-form`
 - Run `git pull origin rails-form`
