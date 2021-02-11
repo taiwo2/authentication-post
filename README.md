@@ -9,14 +9,12 @@
 
 - Clone the repo `https://github.com/taiwo2/authenntication-post.git`
 - `cd` into the directory
-- Run `git checkout -b rails-form`
-- Run `git pull origin rails-form`
+- Run `git checkout -b authentication`
+- Run `git pull origin authentication`
 - Run `bundle install`
 - Setup your db, and run `rails db:create db:migrate`
 
 ## Features
-
-
 
 
 ## Author
