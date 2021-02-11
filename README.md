@@ -5,6 +5,9 @@
 - Ruby on Rails
 - HTML
 
+![screenshot](./Authentic.png)
+
+
 ## Getting started
 
 - Clone the repo `https://github.com/taiwo2/authenntication-post.git`
