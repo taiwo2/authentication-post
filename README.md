@@ -5,7 +5,7 @@
 - Ruby on Rails
 - HTML
 
-![screenshot](./Authentic.png)
+![screenshot](app/assets/images/Authentic.png)
 
 
 ## Getting started
