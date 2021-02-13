@@ -1,0 +1,41 @@
+<div class="just-back-button-header">
+    <%= button_to "back to posts", root_path, method: :get, class: "button" %>
+</div>
+
+<h1>Sign up</h1>
+
+<div class="form-text">
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :username %><br />
+      <%= f.text_field :username, class: "form-field" %><br /><br />
+    </div>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autocomplete: "email", class: "form-field" %><br /><br />
+    </div>
+
+    <div class="field">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: "form-field" %><br /><br />
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-field" %><br /><br />
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div><br />
+
+  <% end %>
+
+  <%= render "devise/shared/links" %>

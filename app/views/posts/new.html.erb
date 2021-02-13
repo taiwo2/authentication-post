@@ -1,0 +1,9 @@
+<div class="just-back-button-header">
+    <%= button_to "back to posts", root_path, method: :get, class: "button" %>
+</div>
+
+<%= form_with model: @post, class: "post-form" do |form| %>
+  <%= form.label "Write a post!", class: "label" %>
+  <%= form.text_area :text, class: "text-area" %>
+  <%= form.submit "Post it!", class: "submit" %>
+<% end %>

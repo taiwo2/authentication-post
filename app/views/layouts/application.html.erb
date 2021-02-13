@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authentic</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
+  </head>
+
+  <body>
+  <% if flash[:notice] %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
+    <% if flash[:alert] %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+    <% unless current_user %>
+  <div class="index-header-not-logged-in">
+    <%= button_to "sign up", new_user_registration_path, method: :get, class: "button" %>
+    <%= button_to "login", new_user_session_path, method: :get, class: "button" %>
+  </div>
+<% end %><br/><br/>
+    <%= yield %>
+    
+</html>
